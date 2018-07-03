@@ -156,4 +156,9 @@
       <Name>JogoCartas</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\joker_card.jpg" />
+    <BundleResource Include="Resources\back_card.jpg" />
+    <BundleResource Include="Resources\a_card.jpg" />
+  </ItemGroup>
 </Project>
