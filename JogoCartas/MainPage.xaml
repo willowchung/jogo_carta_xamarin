@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JogoCartas" x:Class="JogoCartas.MainPage">
-    <StackLayout>
+    <StackLayout BackgroundColor="Green">
         <StackLayout Orientation="Horizontal" Padding="20,160,20,20">
             <Image x:Name="leftCard" Source="back_card.jpg" HorizontalOptions="Start">
                 <Image.GestureRecognizers>
@@ -20,9 +20,9 @@
         </StackLayout>
 
         <StackLayout Orientation="Vertical" Padding="20">
-            <Label x:Name="labelFeedback" Text="Selecione uma carta para inciar a partida!" HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="labelResultado" Text="" HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="labelRecorde" Text="" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="labelFeedback" Text="Selecione uma carta para inciar a partida!" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Label x:Name="labelResultado" Text="" HorizontalOptions="CenterAndExpand" TextColor="White" />
+            <Label x:Name="labelRecorde" Text="" HorizontalOptions="CenterAndExpand" TextColor="White" />
         </StackLayout>
 
     </StackLayout>
