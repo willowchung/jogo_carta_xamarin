@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:JogoCartas" x:Class="JogoCartas.MainPage">
     <StackLayout>
-            <StackLayout Orientation="Horizontal" Padding="20,160,20,20">
-    <!--        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />-->
+        <StackLayout Orientation="Horizontal" Padding="20,160,20,20">
             <Image x:Name="leftCard" Source="back_card.jpg" HorizontalOptions="Start">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTapCard" NumberOfTapsRequired="1" />
@@ -19,5 +18,12 @@
                </Image.GestureRecognizers>
             </Image>
         </StackLayout>
+
+        <StackLayout Orientation="Vertical" Padding="20">
+            <Label x:Name="labelFeedback" Text="Selecione uma carta para inciar a partida!" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="labelResultado" Text="" HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="labelRecorde" Text="" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>
