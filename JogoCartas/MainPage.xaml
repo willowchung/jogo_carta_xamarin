@@ -3,9 +3,21 @@
     <StackLayout>
             <StackLayout Orientation="Horizontal" Padding="20,160,20,20">
     <!--        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />-->
-            <Image Source="back_card.jpg" HorizontalOptions="Start"></Image>
-            <Image Source="back_card.jpg" HorizontalOptions="CenterAndExpand"></Image>
-            <Image Source="back_card.jpg" HorizontalOptions="End"></Image>
+            <Image x:Name="leftCard" Source="back_card.jpg" HorizontalOptions="Start">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapCard" NumberOfTapsRequired="1" />
+               </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="middleCard" Source="back_card.jpg" HorizontalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapCard" NumberOfTapsRequired="1" />
+               </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="rightCard" Source="back_card.jpg" HorizontalOptions="End">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapCard" NumberOfTapsRequired="1" />
+               </Image.GestureRecognizers>
+            </Image>
         </StackLayout>
     </StackLayout>
 </ContentPage>
